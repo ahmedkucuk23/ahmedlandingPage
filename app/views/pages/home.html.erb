@@ -1,17 +1,84 @@
+
+
 <div class="hero " id="omeni">
   <div class="container d-flex align-items-center justify-content-center">
-    <div class="box">
+    <div class="box" style="margin-top: 100px;">
         <div class="title">
             <span class="block"></span>
-            <h1>Ahmed Kucuk<span></span></h1>
+            <h1 style="text-align: center;">Ahmed Kucuk<span></span></h1>
         </div>
         <div class="role">
             <div class="block"></div>
-            <p>Fullstack Developer</p>
+            <p style="text-align: center;">Fullstack Developer</p>
         </div>
     </div>
   </div>
 </div>
+
+
+<div id="projectFacts" class="sectionClass">
+    <div class="fullWidth eight columns">
+        <div class="projectFactsWrap ">
+            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                <i class="fa fa-code"></i>
+                <p id="number1" class="number">12</p>
+                <span></span>
+                <p>Websites done</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="10" style="visibility: visible;">
+                <i class="fa fa-smile-o"></i>
+                <p id="number2" class="number">10</p>
+                <span></span>
+                <p>Happy clients</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="9" style="visibility: visible;">
+                <i class="fa fa-graduation-cap"></i>
+                <p id="number3" class="number">9</p>
+                <span></span>
+                <p>Coding Courses</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="5" style="visibility: visible;">
+                <i class="fa fa-camera"></i>
+                <p id="number4" class="number">5</p>
+                <span></span>
+                <p>Video Campaigns</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+  $.fn.jQuerySimpleCounter = function( options ) {
+      var settings = $.extend({
+          start:  0,
+          end:    100,
+          easing: 'swing',
+          duration: 400,
+          complete: ''
+      }, options );
+
+      var thisElement = $(this);
+
+      $({count: settings.start}).animate({count: settings.end}, {
+      duration: settings.duration,
+      easing: settings.easing,
+      step: function() {
+        var mathCount = Math.ceil(this.count);
+        thisElement.text(mathCount);
+      },
+      complete: settings.complete
+    });
+  };
+
+
+$('#number1').jQuerySimpleCounter({end: 12,duration: 3000});
+$('#number2').jQuerySimpleCounter({end: 10,duration: 3000});
+$('#number3').jQuerySimpleCounter({end: 9,duration: 2000});
+$('#number4').jQuerySimpleCounter({end: 5,duration: 2500});
+</script>
+
+
 
 <div id="usluge">
   <div class="all">
@@ -22,7 +89,7 @@
       <div class="text">Web Design</div>
     </div>
     <div class="center">
-      <div class="explainer"><span>Usluge</span></div>
+      <div class="explainer"><span>Services</span></div>
       <div class="text">Frontend Development</div>
       </div>
     <div class="right">
@@ -32,9 +99,58 @@
       <div class="text">Video & Post Production</div>
     </div>
   </div>
+  <div class="all2">
+    <p>ahmed</p>
+  </div>
 </div>
 
 
 <div id="portfolio">
 
+</div>
+
+
+<div id="contact">
+    <div class="bg-contact100">
+      <div class="container-contact100">
+        <div class="wrap-contact100">
+          <div class="contact100-pic js-tilt" data-tilt>
+            <%= image_tag ("img-01.webp") %>
+          </div>
+
+          <form class="contact100-form validate-form" action="https://formspree.io/f/mzbyzwlz" method="POST">
+            <span class="contact100-form-title">
+              Contact me
+            </span>
+
+            <div class="wrap-input100 validate-input" data-validate = "Name is required">
+              <input class="input100" type="text" name="name" placeholder="Name">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fas fa-user" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+              <input class="input100" type="email" name="email" placeholder="Email">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Message is required">
+              <textarea class="input100" name="message" placeholder="Message"></textarea>
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+              <button class="contact100-form-btn" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 </div>
