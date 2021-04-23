@@ -21,6 +21,9 @@ nav {
       text-align: center;
       font-family: arvo;
     }
+    ul li:first-child {
+      border-left:none;
+    }
 
     li a {
       color: black;
@@ -32,6 +35,11 @@ nav {
 
     li:hover {
       cursor: pointer;
+    }
+    @media screen and (max-width: 600px) {
+      ul{
+        padding-inline-start: 0px;
+      }
     }
 
     ul li ul {
