@@ -4,7 +4,7 @@
   background-color: rgba(26, 30, 35, 0.6);
 }
 .hero-back{
-  background: image-url("hero2.webp");
+  background: image-url("herov2.webp");
   width:100%;
   height:100vh;
   background-position: center center;
@@ -164,8 +164,7 @@
 .container {
 
   .box {
-    width: 500px;
-    height: 500px;
+
     position: relative;
     display: flex;
     justify-content: center;
@@ -177,6 +176,7 @@
       display: flex;
       align-items: center;
       height: 100px;
+      justify-content: center;
 
       .block {
         width: 0%;
@@ -228,6 +228,7 @@
       align-items: center;
       height: 50px;
       margin-top: -10px;
+      justify-content: center;
 
       .block {
         width: 0%;
@@ -363,8 +364,7 @@
   .container {
 
   .box {
-    width: 500px;
-    height: 500px;
+    width:100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -375,9 +375,8 @@
       position: relative;
       display: flex;
       align-items: bottom;
-      height: 100px;
-
-
+      height: 70px;
+      justify-content: center;
       .block {
         width: 0%;
         height: inherit;
@@ -390,7 +389,7 @@
       h1 {
         font-family: 'Poppins';
         color: #fff;
-        font-size: 45px;
+        font-size:44px;
         -webkit-animation: mainFadeIn 2s forwards;
         -o-animation: mainFadeIn 2s forwards;
         animation: mainFadeIn 2s forwards;
@@ -407,7 +406,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      height: 50px;
+      height: 30px;
       margin-top: -10px;
 
       .block {
@@ -760,12 +759,17 @@ textarea.input100 {
 
 @media (max-width: 768px) {
   .wrap-contact100 {
-    padding: 110px 80px 157px 80px;
+    padding: 50px 80px 157px 80px;
   }
 
   .contact100-pic {
-    display: none;
+    text-align:center;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom:50px;
   }
+
 
   .contact100-form {
     width: 100%;
@@ -774,7 +778,7 @@ textarea.input100 {
 
 @media (max-width: 576px) {
   .wrap-contact100 {
-    padding: 110px 15px 157px 15px;
+    padding: 50px 15px 50px 15px;
   }
 }
 
@@ -1065,7 +1069,7 @@ textarea.input100 {
 .speedup:hover {
     box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
     cursor: pointer;
-    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%);
 }
 
 .settings:hover {
@@ -1098,4 +1102,137 @@ textarea.input100 {
     background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
 }
 
+.icon-back{
+  color:white;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  padding:20px;
+  font-size: 40px;
+  width:100px;
+}
 
+.hero-h{
+    color: #fff;
+    font-weight: 200;
+    font-size:35px;
+    font-family: 'Poppins';
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px black;
+}
+
+@media screen and (max-width: 508px) {
+  .hero-h{
+    font-size:35px;
+  }
+}
+
+.hero-heading-button{
+  margin-top: 20px;
+button{
+    width:200px;
+    height:70px;
+    background: linear-gradient(to left top, #122233 50%, #152638 50%);
+    border-style: none;
+    color:#fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+button:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+button:hover span{
+    animation-play-state: paused;
+}
+}
