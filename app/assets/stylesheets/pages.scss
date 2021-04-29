@@ -1256,8 +1256,19 @@ button:hover span{
   color:#fff;
   font-family: 'Poppins',Arial, sans-serif;
 }
+.portfolio_h{
+  font-family: 'Poppins', Arial, sans-serif;
+  color:black;
+  padding-top:50px;
+}
 @media screen and (max-width: 508px) {
   .about_sec_pic{
     display:none;
+  }
+  .about_h{
+    text-align:center;
+  }
+  .about_p{
+    text-align:center;
   }
 }
