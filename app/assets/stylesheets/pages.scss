@@ -6,6 +6,7 @@ html {
 
 .hero{
   background-color: rgba(26, 30, 35, 0.6);
+
 }
 .hero-back{
   background: image-url("herov2.webp");
@@ -1243,5 +1244,20 @@ button:hover span{
 
 .about_us{
   background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+  background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
 
+}
+.about_p{
+  color:#fff;
+  font-family: 'Poppins',Arial, sans-serif;
+  font-weight:200;
+}
+.about_h{
+  color:#fff;
+  font-family: 'Poppins',Arial, sans-serif;
+}
+@media screen and (max-width: 508px) {
+  .about_sec_pic{
+    display:none;
+  }
 }
