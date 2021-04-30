@@ -3,7 +3,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+a{
+  text-decoration:none;
+}
 .hero{
   background-color: rgba(26, 30, 35, 0.6);
 
@@ -19,6 +21,29 @@ html {
   position: absolute;
 
 }
+.client_s{
+   transition: transform .2s;
+   width:90%;
+   margin-bottom:20px;
+}
+.client_s:hover{
+   transform: scale(1.1);
+}
+.card1{
+  background: image-url("vet.webp");
+  background-size:cover;
+}
+
+.card2{
+  background: image-url("gl.webp");
+  background-size:cover;
+}
+.card3{
+  background: image-url("tp.webp");
+  background-size:cover;
+}
+
+
 
 .hero_header{
   font-family: 'Poppins',Arial, sans-serif;
